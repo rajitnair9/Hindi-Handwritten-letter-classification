@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="result-container">
+        <img src="{{ url_for('static', filename='uploads/' + image_file) }}" alt="Uploaded Image">
+        <h1>The predicted letter is: {{ letter }}</h1>
+    </div>
+</body>
+</html>
